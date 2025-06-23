@@ -1,0 +1,165 @@
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(-45deg, #d5ba98, #f2efe7, #d5ba98);
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .login-box h2 {
+    color: #d5ba98;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  
+  .input-field {
+  position: relative;
+  margin-bottom: 35px; 
+  width: 100%;
+  }
+  
+  .input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d5ba98;
+    font-size: 18px;
+  }
+  
+ .input-field input {
+  width: 100%;
+  padding: 12px 40px 12px 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+  
+  .input-field input:focus {
+    border-color: #d5ba98;
+  }
+  
+  .reg {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    padding-top: 7px;
+  }
+  
+  .login-btn, .register-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn {
+    background-color: #d5ba98;
+    color: #fff;
+  }
+  
+  .login-btn:hover {
+    background-color: #b8a38c;
+  }
+  
+  .register-btn {
+    background-color: transparent;
+    border: 2px solid #d5ba98;
+    color: #d5ba98;
+  }
+  
+  .register-btn:hover {
+    background-color: #d5ba98;
+    color: #fff;
+  }
+  
+  .social-login {
+    margin-top: 25px;
+  }
+  
+  .social-login p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f2efe7;
+    border-radius: 50%;
+    color: #d5ba98;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #d5ba98;
+    color: #fff;
+  }
+  
+  .error {
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  font-size: 0.85em;
+  color: red;
+  line-height: 1;
+}
+  
+  .general-error {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .input-field {
+    position: relative;
+  }
+  
+  .toggle-visibility {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
